@@ -1,0 +1,16 @@
+{
+    "name": "nubay_services/par_tabs",
+    "description": "Creates Tabs paragraphs entity",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Jill Handman",
+            "email": "jill@handmangroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/paragraphs": "^1.15",
+        "drupal/entity_usage": "^2.0"
+   }
+}

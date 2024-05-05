@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_tab_item.field_paragraph_tab_content
+    - field.field.paragraph.paragraph_tab_item.field_paragraph_tab_title
+    - paragraphs.paragraphs_type.paragraph_tab_item
+  module:
+    - text
+_core:
+  default_config_hash: gNoNvS0DeZsfy-5seIOQgv33ZuO6EF9yD4kMbNkDHE4
+id: paragraph.paragraph_tab_item.default
+targetEntityType: paragraph
+bundle: paragraph_tab_item
+mode: default
+content:
+  field_paragraph_tab_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraph_tab_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

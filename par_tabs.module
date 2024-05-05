@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Paragraph columns module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function par_tabs_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'par_tabs/tabs';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function par_tabs_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__paragraph_tabs' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__paragraph_tab_item' => [
+      'base hook' => 'paragraph',
+    ],
+    'field__field_paragraph_tab_title' => [
+      'base hook' => 'field',
+    ],
+    'field__field_paragraph_tab_items' => [
+      'base hook' => 'field',
+    ],
+  ];
+}
