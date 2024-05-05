@@ -1,7 +1,4 @@
 tabs:
-  css:
-    component:
-      css/par_tabs.css: {}
   js:
     js/par_tabs.js: { preprocess: false }
   dependencies:
