@@ -1,0 +1,176 @@
+.tabs {
+  display: block;
+  margin-bottom: 0;
+}
+.tabs > li {
+  display: inline-block;
+  opacity: .5;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tabs > .active,
+.tabs:hover {
+  opacity: 1;
+}
+.tabs .tab__title {
+  cursor: pointer;
+}
+.tabs .tab__title:not(.btn) {
+  padding: 0 1.85714286em;
+}
+.tabs li:first-child .tab__title:not(.btn) {
+  padding-left: 0;
+}
+.tabs .tab__content {
+  display: none;
+}
+.tabs-content {
+  margin-top: 1.25rem;
+}
+.tabs-content li > .tab__content {
+  width: 100%;
+  display: none;
+}
+.tabs-content > .active > .tab__content {
+  display: block;
+  float: left;
+}
+.tabs-container[data-content-align="left"] .tabs-content {
+  text-align: left;
+}
+@media all and (max-width: 767px) {
+  .tabs-content > li:not(.active) .tab__content {
+    display: none !important;
+  }
+}
+.tabs-container.tabs--vertical {
+  overflow: hidden;
+}
+.tabs-container.tabs--vertical .tabs {
+  width: 25%;
+  float: left;
+}
+.tabs-container.tabs--vertical .tabs li {
+  display: block;
+}
+.tabs-container.tabs--vertical .tabs li:not(:last-child) {
+  border-right: none;
+  border-bottom: 1px solid #ECECEC;
+}
+.tabs-container.tabs--vertical .tabs-content {
+  width: 70%;
+  float: right;
+  margin-top: 0;
+}
+.tabs-container.tabs--vertical .tabs-content > li:not(.active) .tab__content {
+  animation: fadeOutUp .5s ease forwards;
+  -webkit-animation: fadeOutUp .5s ease forwards;
+}
+.tabs-container.tabs--vertical .tabs-content > li.active .tab__content {
+  animation: fadeInUp .5s ease forwards;
+  -webkit-animation: fadeInUp .5s ease forwards;
+  backface-visibility: hidden;
+}
+.tabs-container.tabs--vertical.tabs--icons .tabs {
+  width: 15%;
+  text-align: center;
+}
+.tabs-container.tabs--vertical.tabs--icons .tabs-content {
+  width: 80%;
+}
+@media all and (max-width: 767px) {
+  .tabs-container.tabs--vertical .tabs,
+  .tabs-container.tabs--vertical .tabs-content {
+    width: 100%;
+    float: none;
+  }
+  .tabs-container.tabs--vertical .tabs {
+    margin-bottom: 1.85714286em;
+  }
+  .tabs-container.tabs--vertical .tabs-content > li:not(.active) .tab__content {
+    animation: fadeOutRight .5s ease forwards;
+    -webkit-animation: fadeOutRight .5s ease forwards;
+  }
+  .tabs-container.tabs--vertical .tabs-content > li.active .tab__content {
+    animation: fadeInLeft .5s ease forwards;
+    -webkit-animation: fadeInLeft .5s ease forwards;
+    backface-visibility: hidden;
+  }
+}
+.tabs {
+  display: inline-flex;
+}
+.tabs li {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  padding: 0.92857143em 1.85714286em;
+}
+.tabs li:not(:last-child) {
+  border-right: 1px solid #ECECEC;
+}
+.tabs li.active {
+  opacity: 1;
+}
+.tabs li.active .tab__title {
+  color: #4a90e2;
+}
+.tabs li.active .tab__title span {
+  color: #4a90e2;
+}
+.tabs li:not(.active) {
+  opacity: .5;
+}
+.tabs li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.tabs .tab__title {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+.tabs .tab__title:not(.btn) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.tabs .tab__title i + span {
+  margin-top: 0.46428571em;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.tabs-content {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  float: left;
+}
+.tabs-content > li:not(.active) .tab__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeOutRight .5s ease forwards;
+  -webkit-animation: fadeOutRight .5s ease forwards;
+}
+.tabs-content > li.active {
+  animation: fadeInLeft .5s ease forwards;
+  -webkit-animation: fadeInLeft .5s ease forwards;
+  backface-visibility: hidden;
+}
+@media all and (max-width: 767px) {
+  .tabs li {
+    display: block;
+  }
+  .tabs li:not(:last-child) {
+    border-bottom: 1px solid #ECECEC;
+    border-right: none;
+  }
+}
