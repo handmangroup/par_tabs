@@ -1,4 +1,7 @@
 tabs:
+  css:
+    theme:
+      css/tabs.css: { }
   js:
     js/par_tabs.js: { preprocess: false }
   dependencies:
