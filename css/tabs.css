@@ -1,8 +1,8 @@
-.tabs {
+.par_tabs {
   display: block;
   margin-bottom: 0;
 }
-.tabs > li {
+.par_tabs > li {
   display: inline-block;
   opacity: .5;
   transition: 0.3s ease;
@@ -13,20 +13,20 @@
   -ms-user-select: none;
   user-select: none;
 }
-.tabs > .active,
-.tabs:hover {
+.par_tabs > .active,
+.par_tabs:hover {
   opacity: 1;
 }
-.tabs .tab__title {
+.par_tabs .tab__title {
   cursor: pointer;
 }
-.tabs .tab__title:not(.btn) {
+.par_tabs .tab__title:not(.btn) {
   padding: 0 1.85714286em;
 }
-.tabs li:first-child .tab__title:not(.btn) {
+.par_tabs li:first-child .tab__title:not(.btn) {
   padding-left: 0;
 }
-.tabs .tab__content {
+.par_tabs .tab__content {
   display: none;
 }
 .tabs-content {
@@ -102,44 +102,44 @@
     backface-visibility: hidden;
   }
 }
-.tabs {
+.par_tabs {
   display: inline-flex;
 }
-.tabs li {
+.par_tabs li {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   padding: 0.92857143em 1.85714286em;
 }
-.tabs li:not(:last-child) {
+.par_tabs li:not(:last-child) {
   border-right: 1px solid #ECECEC;
 }
-.tabs li.active {
+.par_tabs li.active {
   opacity: 1;
 }
-.tabs li.active .tab__title {
+.par_tabs li.active .tab__title {
   color: #4a90e2;
 }
-.tabs li.active .tab__title span {
+.par_tabs li.active .tab__title span {
   color: #4a90e2;
 }
-.tabs li:not(.active) {
+.par_tabs li:not(.active) {
   opacity: .5;
 }
-.tabs li:hover {
+.par_tabs li:hover {
   opacity: 1;
   cursor: pointer;
 }
-.tabs .tab__title {
+.par_tabs .tab__title {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
 }
-.tabs .tab__title:not(.btn) {
+.par_tabs .tab__title:not(.btn) {
   padding-right: 0;
   padding-left: 0;
 }
-.tabs .tab__title i + span {
+.par_tabs .tab__title i + span {
   margin-top: 0.46428571em;
   display: inline-block;
   margin-bottom: 0;
@@ -166,10 +166,10 @@
   backface-visibility: hidden;
 }
 @media all and (max-width: 767px) {
-  .tabs li {
+    .par_tabs li {
     display: block;
   }
-  .tabs li:not(:last-child) {
+    .par_tabs li:not(:last-child) {
     border-bottom: 1px solid #ECECEC;
     border-right: none;
   }

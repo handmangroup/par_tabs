@@ -52,7 +52,7 @@
       {% if paragraph.field_paragraph_id.value|render|trim %} id="{{ paragraph.field_paragraph_id.value|striptags }}"  {% endif %} 
       data-content-align="{{ paragraph.field_paragraph_tabcontent_align.value|render|trim|lower }}" 
   >
-    <ul class="tabs nav nav-tabs {{ paragraph.field_paragraph_tab_extra_class.value|render|trim }}">
+    <ul class="tabs par_tabs nav nav-tabs {{ paragraph.field_paragraph_tab_extra_class.value|render|trim }}">
       {{ content.field_paragraph_tab_items }}
     </ul>
   </div>
