@@ -3,7 +3,7 @@
 //////////////// Tabs
     Drupal.behaviors.Tabs = {
         attach: function (context, settings) {
-            $('.tabs').each(function(){
+            $('.par_tabs').each(function(){
                 var tabs = $(this);
                 tabs.after('<ul class="tabs-content">');
                 tabs.find('li').each(function(){
@@ -15,7 +15,7 @@
                 });
             });
 
-            $('.tabs li').on('click', function(){
+            $('.par_tabs li').on('click', function(){
                 var clickedTab    = $(this),
                     tabContainer  = clickedTab.closest('.tabs-container'),
                     activeIndex   = (clickedTab.index()*1)+(1),
@@ -37,7 +37,7 @@
 
             });
 
-            $('.tabs li.active').trigger('click');
+            $('.par_tabs li.active').trigger('click');
         }
     };
 
